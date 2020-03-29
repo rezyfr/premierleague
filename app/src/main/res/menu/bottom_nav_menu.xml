@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_klasemen"
+        android:icon="@drawable/ic_nav_klasemen"
+        android:title="@string/menu_klasemen" />
+
+    <item
+        android:id="@+id/nav_statistik"
+        android:icon="@drawable/ic_nav_topskor"
+        android:title="@string/menu_topskor" />
+
+    <item
+        android:id="@+id/nav_fav"
+        android:icon="@drawable/ic_nav_fav"
+        android:title="@string/menu_topsko" />
+
+</menu>

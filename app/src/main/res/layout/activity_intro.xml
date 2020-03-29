@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.intro.IntroActivity"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/img_intro"/>
+
+    <include layout="@layout/progress_dialog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="#FFF"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/intro_header"
+        android:fontFamily="sans-serif-black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <GridView
+        android:background="#FFF"
+        android:id="@+id/gv_team"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:numColumns="3"
+        android:stretchMode="spacingWidthUniform"
+        tools:listitem="@layout/item_intro_layout"
+        android:layout_marginBottom="16dp"
+        android:listSelector="@color/colorAccentLight"/>
+
+    <Button
+        android:id="@+id/btn_lanjut"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_btn_lanjut"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>
